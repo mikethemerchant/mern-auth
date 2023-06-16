@@ -18,8 +18,8 @@ const authUser = asyncHandler(async (req, res) => {
         email: user.email
       });
     } else {
-      res.status(400);
-      throw new Error('Invalid user data');
+      res.status(401);
+      throw new Error('Invalid username or password');
     }
 });
 

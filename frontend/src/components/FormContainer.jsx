@@ -12,4 +12,4 @@ const FormContainer = ( { children }) => {
   )
 }
 
-export default FormContainer
+export default FormContainer;

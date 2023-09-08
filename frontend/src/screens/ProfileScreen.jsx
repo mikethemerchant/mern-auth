@@ -29,7 +29,7 @@ const ProfileScreen = () => {
     const submitHandler = async (e) => {
         e.preventDefault();
         if (password !== confirmPassword) {
-            toast.error('Passwords do not match');
+            toast.error('Passwords do not match'); // everything works but when you close the box it says can't prevent default.
         } else {
             try {
               const res = await updateProfile({ 
